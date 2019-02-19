@@ -2,14 +2,7 @@
 <head>
   <title>A website about ducks</title>
   <link rel='stylesheet' href='index.css'/>
-  <script>
-  function PlaySound(melody) {
-    alert("On Press of " +melody);
-    var path = 'path\\to\\melody'
-    var snd = new Audio (path + melody + 'quack.mp3');
-    snd.play();
-  }
-  </script>
+
   </head>
 
 <body>
@@ -17,7 +10,8 @@
   <h2>By Marianna Beltrami</h2>
 
   <button onclick="location.href = 'https://www.youtube.com/watch?v=q38Y5FLK63k';" >An informative video</button>
-  <button onclick="PlaySound('melody')"> Quack!</button>
+<audio id="quack" src="quack.mp3"></audio>
+  <button onclick="document.getElementById('quack').play()"> Quack!</button>
 
   <h3>What are ducks?</h3>
   <p>Did you know that a male duck is called a drake and a female duck is called a duck?</p>
