@@ -1,0 +1,15 @@
+h1 {
+  font-family: fantasy;
+  font: ComicSansMS;
+  color: green;
+}
+
+h2 {
+  font-family: ComicSansMS;
+  color: pink;
+  background: purple;
+}
+
+p {
+  font-family: Tahoma;
+}
