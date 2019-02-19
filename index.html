@@ -15,9 +15,14 @@
 
   <h3>What are ducks?</h3>
   <p>Did you know that a male duck is called a drake and a female duck is called a duck?</p>
-  <p>Ducks are part of the watefowl family Anatidae.</p>
+  <p>Ducks are part of the waterfowl family Anatidae.</p>
   <p>They are aquatic birds and are found in fresh water and sea water, although I've never seen a duck at the seaside.</p>
 <hr>
 
-<p> Here is a duck, or more precisely a Mallard.</p>
-  <img src="duck.jpg" alt="A duck, or more precisely a Mallard">
+<p> Here is a duck, or more precisely a Mallard. Click on the Mallard for him to greet you.</p>
+<audio id="audio_play">
+    <source src="quack.ogg" type="audio/ogg" />
+    <source src="quack.mp3" type="audio/mpeg" />
+</audio>
+
+<img src="duck.jpg" onClick="document.getElementById('audio_play').play(); return false;" />
